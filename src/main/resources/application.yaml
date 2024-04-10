@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /springboottest
+
+spring:
+  application:
+    name: springboottest
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/springboottest?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&allowMultiQueries=true
+    username: root
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
